@@ -1,0 +1,336 @@
+:root {
+  --standard-white: #fff;
+  --bg-first-color: #00467f;
+  --bg-second-color: #a5cc82;
+  --card-first-color: #292e49;
+  --card-first-color: #00416a;
+  --card-second-color: #acb6e5;
+  --card-triangle-color: #4c75a1;
+  --button-color: #4286f4;
+  --button-hover-color: #2c5364;
+  --text-color: #99f2c8;
+  --result-color: #38ef7d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    to right,
+    var(--bg-first-color),
+    var(--bg-second-color)
+  );
+  flex-direction: column;
+  font-family: "Mukta";
+}
+.easter-egg i {
+  display: flex;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+.easter-egg i:hover {
+  transition: 0.3s ease;
+  color: var(--button-hover-color);
+  cursor: pointer;
+}
+.title {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: var(--standard-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(0.5rem, calc(0.5vw + 0.5rem), 1.5rem);
+}
+.formats {
+  max-height: 90vh;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.square {
+  display: block;
+  background-image: linear-gradient(
+    to top left,
+    var(--card-first-color),
+    var(--card-second-color)
+  );
+  border-radius: 16px;
+  max-height: 380px;
+  width: 330px;
+  padding: 50px;
+  flex-direction: column;
+  box-shadow: 0 0 2em var(--card-first-color);
+}
+.square h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--standard-white);
+}
+.sizes p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.result-circle p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sizes input {
+  border: none;
+  height: 35px;
+  border-radius: 3px;
+  outline: none;
+  caret-color: var(--button-color);
+  padding-left: 10px;
+  font-family: "Noto Sans JP";
+}
+.button {
+  display: block;
+  margin: 0px auto;
+  height: 35px;
+  width: 70px;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  border: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--standard-white);
+  transition: 0.3s ease;
+  font-family: "Cairo";
+  font-weight: 700;
+}
+.button:hover {
+  background-color: var(--button-hover-color);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  color: var(--result-color);
+  text-align: left;
+}
+.resulted {
+  font-weight: 900;
+  color: var(--text-color);
+  text-align: center;
+  align-items: center;
+}
+#area,
+#area-triangle {
+  margin-top: 20px;
+}
+#perimeter,
+#perimeter-triangle {
+  margin-top: 15px;
+}
+.circle {
+  width: 350px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.result-circle {
+  text-align: center;
+}
+.triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 150px solid transparent;
+  border-top: 0;
+  margin-top: none;
+  padding: 0px;
+  color: var(--card-triangle-color);
+  border-bottom: 380px solid;
+  box-shadow: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.triangle h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.sizes-triangle p {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.results p {
+  margin: 0;
+  padding: 10px;
+}
+.triangle .button {
+  margin-left: -40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result-triangle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.result-triangle p {
+  margin-top: -10px;
+}
+.sizes-triangle input {
+  width: 70px;
+}
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  z-index: 101;
+  display: none;
+}
+.delayedPopupWindow {
+  display: none;
+  position: fixed;
+  width: auto;
+  max-width: 480px;
+  height: 290px;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  background-image: linear-gradient(to top left, #159957, #155799);
+  color: var(--standard-white);
+  border-radius: 5px;
+  z-index: 102;
+  padding: 22px 22px;
+}
+.sidepop {
+  width: 10%;
+  float: right;
+}
+.fa-times {
+  display: block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "Arimo";
+  font-weight: 900;
+  color: var(--bg-second-color);
+  transition: 0.3s ease;
+}
+.fa-times:hover {
+  color: var(--button-hover-color);
+  transition: 0.3s ease;
+}
+.txtright {
+  width: 97%;
+  padding: 1%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+span {
+  color: var(--bg-second-color);
+}
+@media (max-width: 998px) {
+  .easter-egg i {
+    display: block;
+    position: relative;
+    align-items: right;
+    text-align: right;
+  }
+  .delayedPopupWindow {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    max-width: 300px;
+  }
+  .txtright {
+    width: 97%;
+    padding: 1%;
+    color: var(--default-color);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .formats {
+    flex-direction: column;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+  }
+  .square {
+    margin-bottom: 100px;
+    max-height: 400px;
+    width: 290px;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  .triangle {
+    display: block;
+    max-height: 410px;
+    width: 290px;
+  }
+  .triangle h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+  }
+  .result-triangle p {
+    margin-top: -10px;
+  }
+  .circle {
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  .result-circle p {
+    margin: 0px;
+    padding: 0;
+  }
+}

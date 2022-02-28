@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Cairo:wght@300&family=Hind:wght@300&family=Nanum+Gothic&family=Noto+Sans+JP:wght@300&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <title>Areas Calculator</title>
+  </head>
+  <body>
+    <div class="title"><h1>Area and Perimeter Calculator</h1></div>
+    <div class="formats">
+      <div class="square">
+        <h2>RECTANGLE</h2>
+
+        <div class="sizes">
+          <p><input type="text" id="heigth" placeholder="Heigth" /></p>
+          <p><input type="text" id="width" placeholder="Width" /></p>
+        </div>
+        <input
+          type="submit"
+          value="Ready"
+          class="button"
+          onclick="calculate()"
+        />
+
+        <div class="result">
+          <p class="resulted">RESULT</p>
+          <p id="area"></p>
+          <p id="perimeter"></p>
+        </div>
+      </div>
+
+      <div class="square circle">
+        <h2>CIRCLE</h2>
+
+        <div class="sizes">
+          <p><input type="text" id="raio" placeholder="Raio" /></p>
+        </div>
+        <input type="submit" value="Ready" class="button" onclick="circle()" />
+
+        <div class="result result-circle">
+          <p class="resulted">RESULT</p>
+          <p id="area-circle"></p>
+          <p id="perimeter-circle"></p>
+        </div>
+      </div>
+
+      <div class="square triangle">
+        <h2>T</h2>
+
+        <div class="sizes sizes-triangle">
+          <p><input type="text" id="heigth-triangle" placeholder="Heigth" /></p>
+          <p><input type="text" id="width-triangle" placeholder="Base" /></p>
+        </div>
+        <input
+          type="submit"
+          value="Ready"
+          class="button"
+          onclick="triangle()"
+        />
+
+        <div class="result result-triangle">
+          <p class="resulted">RESULT</p>
+          <div class="results">
+            <p id="area_triangle"></p>
+            <p id="perimeter_triangle"></p>
+          </div>
+        </div>
+      </div>
+      <div id="bkgOverlay" class="backgroundOverlay"></div>
+      <div id="delayedPopup" class="delayedPopupWindow">
+        <div class="sidepop">
+          <a href="#" id="btnClose"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="txtright">
+          <p>
+            Welcome to Calculator! Here you can calculete the
+            <span>area and perimeter </span> in a simple way
+          </p>
+          <br />
+          <p>Result could be in any <span>format</span></p>
+          <br />
+          <p>
+            <span>Area</span> (m<sup>2</sup> - cm<sup>2</sup>),
+            <span>Perimeter</span> (m - cm)
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="easter-egg">
+        <i id="formulas" class="fas fa-question-circle"></i>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $("#formulas").on("click", function (e) {
+        e.preventDefault();
+        var form = $(this).parents("form");
+        Swal.fire({
+          title: "Area and Perimeter Formulas",
+          imageUrl: "image/image.png",
+          padding: "0.5rem",
+          imageWidth: 630,
+          imageHeight: 240, //um pouco distorcido no mobile altura
+          confirmButtonColor: "#00467f",
+          imageAlt: "Formats Img",
+          background: "#55FFAF",
+        });
+      });
+    </script>
+  </body>
+</html>
