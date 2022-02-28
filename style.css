@@ -86,6 +86,8 @@ body {
 .sizes p {
   margin-bottom: 20px;
   text-align: center;
+  justify-content: center;
+  align-self: center;
 }
 .result-circle p {
   margin-bottom: 20px;
@@ -95,10 +97,13 @@ body {
   border: none;
   height: 35px;
   border-radius: 3px;
+  padding: 10px;
   outline: none;
   caret-color: var(--button-color);
-  padding-left: 10px;
   font-family: "Noto Sans JP";
+  justify-content: center;
+  align-self: center;
+  width: 150px;
 }
 .button {
   display: block;
