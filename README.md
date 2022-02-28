@@ -1,6 +1,6 @@
-## [Calculator](https://bumboobee.github.io/Full-Spider-Verse/) ⬛ - 🏐 - 🔺
+## [Calculator](https://bumboobee.github.io/Area-Perimeter-Calculator/) ⬛ - 🏐 - 🔺
 
-The **[Calculator](https://bumboobee.github.io/Full-Spider-Verse/)** is my first project with all focus in JavaScript **[functions()](https://www.w3schools.com/js/js_functions.asp)**.
+The **[Calculator](https://bumboobee.github.io/Area-Perimeter-Calculator/)** is my first project with all focus in JavaScript **[functions()](https://www.w3schools.com/js/js_functions.asp)**.
 
 At basics is a **area and perimeter calculator for rectangles, circles and triangles,** all of it in **just one page!!!** 
 The user can input some values and **recive the result at the same time!** Amazing, isn't it? 🤗
@@ -11,7 +11,7 @@ AAAh, I almost forget... theres a resposive layout too ☺
  
 ## About 📱
 
-In this **[page](https://bumboobee.github.io/Full-Spider-Verse/)**, you can calculate the areas and perimeters by just clicking in a button.
+In this **[page](https://bumboobee.github.io/Area-Perimeter-Calculator/)**, you can calculate the areas and perimeters by just clicking in a button.
 
 I used more CSS and JavaScript for this one... But the **[SweetAlert](https://sweetalert2.github.io/#download)** is on it too.
 
@@ -19,7 +19,7 @@ With some clean colors and a relaxing vibe, I created the layout and the pallet 
 
 ## Take a look
 
- **The final result you can see [➡here⬅](https://bumboobee.github.io/Full-Spider-Verse/)**
+ **The final result you can see [➡here⬅](https://bumboobee.github.io/Area-Perimeter-Calculator/)**
  
 <div align="center">
 
