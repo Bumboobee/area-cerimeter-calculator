@@ -38,9 +38,9 @@ function triangle() {
 }
 $(document).ready(function () {
   //Fade in delay for the background overlay (control timing here)
-  $("#bkgOverlay").delay(1700).fadeIn(400);
+  $("#bkgOverlay").delay(2400).fadeIn(400);
   //Fade in delay for the popup (control timing here)
-  $("#delayedPopup").delay(1600).fadeIn(400);
+  $("#delayedPopup").delay(2500).fadeIn(400);
 
   //Hide dialouge and background when the user clicks the close button
   $("#btnClose").click(function (e) {
