@@ -282,6 +282,7 @@ span {
   .delayedPopupWindow {
     display: block;
     margin: 0 auto;
+    height: 308px;
     justify-content: center;
     align-items: center;
     align-self: center;
