@@ -4,7 +4,7 @@ function calculate() {
   var w = document.getElementById("width").value;
 
   var area = Number(l) * Number(w);
-  var perimeter = area * 2;
+  var perimeter = (Number(l) * 2) + (Number(w) * 2);
 
   document.getElementById("area").innerHTML = "Area - " + area.toFixed(2) + "(cm/m)";
   document.getElementById("perimeter").innerHTML =
