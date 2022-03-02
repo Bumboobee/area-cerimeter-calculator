@@ -23,9 +23,9 @@ With some clean colors and a relaxing vibe, I created the layout and the pallet 
  
 <div align="center">
 
-![confused-math1](https://user-images.githubusercontent.com/94147847/156075763-a5ea0e6e-3c78-4cb4-a950-7799547d7ac1.gif)
+[![confused-math1](https://user-images.githubusercontent.com/94147847/156075763-a5ea0e6e-3c78-4cb4-a950-7799547d7ac1.gif)](https://bumboobee.github.io/Area-Perimeter-Calculator/)
 
 
- > Maths: The only place where people buy 60 watermelons and no one wonders why.
+ > Maths: The only place where people buy 60 watermelons and no one wonders why
  >> **Unknown**
 <div \> 
